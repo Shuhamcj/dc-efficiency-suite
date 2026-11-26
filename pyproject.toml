@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dc-efficiency-suite"
+version = "4.0.0"
+description = "Data center energy model: PUE, annual energy, carbon, water, cost, Uptime tier, ENERGY STAR and LEED estimates."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Shubham Jadhav" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+dc-efficiency = "dc_efficiency.cli:main"
+
+[tool.setuptools]
+packages = ["dc_efficiency"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

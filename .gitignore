@@ -1,1 +1,13 @@
-
+# Node
+web/node_modules/
+web/dist/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+# OS
+.DS_Store
